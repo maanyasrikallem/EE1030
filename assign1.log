@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.8.3)  5 AUG 2024 12:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.8.3)  6 AUG 2024 14:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1077,7 +1077,7 @@ C.
 ! File ended while scanning use of \@newenv.
 <inserted text> 
                 \par 
-l.21 \usepackage
+l.22 \usepackage
                 [latin1]{inputenc}
 ? 
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
@@ -1282,489 +1282,138 @@ Package hyperref Info: Link coloring OFF on input line 49.
 \@outlinefile=\write5
 \openout5 = `assign1.out'.
 
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 61.
 LaTeX Font Info:    Trying to load font information for U+txsya on input line 6
-1.
+3.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyb on input line 6
-1.
+3.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txmia on input line 6
-1.
+3.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyc on input line 6
-1.
+3.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for TS1+txr on input line 6
-1.
+3.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
-! Missing $ inserted.
-<inserted text> 
-                $
-l.61 ...+  \tan^{-1}(1/7) + .....\tan^{-1}\{1/($n^
-                                                  2 + n + 1$)\} = \tan^{-1}\...
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
+[]\OT1/txr/m/n/12 Using math-e-mat-i-cal in-duc-tion, prove
+ []
 
-? 
-LaTeX Font Info:    Trying to load font information for OMS+txr on input line 6
-1.
-(/usr/share/texlive/texmf-dist/tex/latex/txfonts/omstxr.fd
-File: omstxr.fd 2000/12/15 v3.1
-)
-LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <14> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 61.
 
-! Missing $ inserted.
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
+\OT1/txr/m/n/12 that $[][] [] + [][] [] +
+ []
+
+! Missing \right. inserted.
 <inserted text> 
-                $
-l.61 ........\tan^{-1}\{1/($n^2 + n + 1$)\} = \tan
-                                                  ^{-1}\{($n/n+2$)\}$
+                \right .
+l.78 ...leq p \leq 1 $ and 0 $\leq x,y \leq \pi $}
+                                                  .
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.72 ... sin $A_1$ + sin $A_2$... + sin $A_n$ \leq
-                                                    $n$  sin $(\frac{A_1 + A...
-
+l.78 ...leq p \leq 1 $ and 0 $\leq x,y \leq \pi $}
+                                                  .
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.72 ...$n$  sin $(\frac{A_1 + A_2 +.....+ A_n}{n}
-                                                  )$ where $\geq$ 1 is a nat...
-
+l.78 ...leq p \leq 1 $ and 0 $\leq x,y \leq \pi $}
+                                                  .
 ? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.72 ...$n$  sin $(\frac{A_1 + A_2 +.....+ A_n}{n}
-                                                  )$ where $\geq$ 1 is a nat...
-
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.72 ...$n$  sin $(\frac{A_1 + A_2 +.....+ A_n}{n}
-                                                  )$ where $\geq$ 1 is a nat...
-
-? 
-! Extra }, or forgotten $.
-\frac  #1#2->{\begingroup #1\endgroup \@@over #2}
-                                                 
-l.72 ...$n$  sin $(\frac{A_1 + A_2 +.....+ A_n}{n}
-                                                  )$ where $\geq$ 1 is a nat...
-
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.75 ...{Hint:} You may use the fact that (1+$x$)^
-                                                  {(m+1)p} = (1+$x$)^p(1+$x$...
-
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.76 \section
-             {}
-? 
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.77 ...\frac{$\binom{2n-k}{k}$}{$2n-k \choose n$}
-                                                  $ $for each non-be gatuve ...
-
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.77 ...\frac{$\binom{2n-k}{k}$}{$2n-k \choose n$}
-                                                  $ $for each non-be gatuve ...
-
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.77 ...\frac{$\binom{2n-k}{k}$}{$2n-k \choose n$}
-                                                  $ $for each non-be gatuve ...
-
-? 
-! Extra }, or forgotten $.
-\@genfrac ...begingroup #4\endgroup #2#3\relax #5}
-                                                  }
-l.77 ...\frac{$\binom{2n-k}{k}$}{$2n-k \choose n$}
-                                                  $ $for each non-be gatuve ...
-
-? 
-! Extra }, or forgotten $.
-\@genfrac ...egingroup #4\endgroup #2#3\relax #5}}
+! Extra \right.
+<argument> ...$ and 0 $\leq x,y \leq \pi $\right ]
                                                   
-l.77 ...\frac{$\binom{2n-k}{k}$}{$2n-k \choose n$}
-                                                  $ $for each non-be gatuve ...
-
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.77 ...\frac{$\binom{2n-k}{k}$}{$2n-k \choose n$}
-                                                  $ $for each non-be gatuve ...
-
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.77 ...\frac{$\binom{2n-k}{k}$}{$2n-k \choose n$}
-                                                  $ $for each non-be gatuve ...
-
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.77 ...\frac{$\binom{2n-k}{k}$}{$2n-k \choose n$}
-                                                  $ $for each non-be gatuve ...
-
-? 
-! Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.77 ...\frac{$\binom{2n-k}{k}$}{$2n-k \choose n$}
-                                                  $ $for each non-be gatuve ...
-
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.77 ...\frac{$\binom{2n-k}{k}$}{$2n-k \choose n$}
-                                                  $ $for each non-be gatuve ...
-
+l.78 ...leq p \leq 1 $ and 0 $\leq x,y \leq \pi $}
+                                                  .
 ? 
 
-Package amsmath Warning: Foreign command \atopwithdelims;
-(amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 77.
+Underfull \hbox (badness 10000) in paragraph at lines 78--80
+\OT1/txr/m/n/12 math-e-mat-i-cal in-duc-tion to prove that
+ []
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.77 ...\frac{$\binom{2n-k}{k}$}{$2n-k \choose n$}
-                                                  $ $for each non-be gatuve ...
 
-? 
-! Too many }'s.
-\frac  #1#2->{\begingroup #1\endgroup \@@over #2}
-                                                 
-l.77 ...\frac{$\binom{2n-k}{k}$}{$2n-k \choose n$}
-                                                  $ $for each non-be gatuve ...
+Underfull \hbox (badness 2020) in paragraph at lines 78--80
+\OT1/txr/m/n/12 sin $\OML/txmi/m/it/12 A[]$ \OT1/txr/m/n/12 + sin $\OML/txmi/m/
+it/12 A[]$\OT1/txr/m/n/12 ... + sin $\OML/txmi/m/it/12 A[] \OMS/txsy/m/n/12 ^^T
+ \OML/txmi/m/it/12 n$ \OT1/txr/m/n/12 sin
+ []
 
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.81 ...tive integer n, prove that \sqrt{($4n+1)$}
-                                                   < \sqrt{$n$} < \sqrt{$4n+...
 
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.81 ...tive integer n, prove that \sqrt{($4n+1)$}
-                                                   < \sqrt{$n$} < \sqrt{$4n+...
+Underfull \hbox (badness 10000) in paragraph at lines 78--80
+\OT1/txr/m/n/12 .$[] []$p$\OML/txmi/m/it/12 sin$\OT1/txr/m/n/12 x$+$$[]$$\OML/t
+xmi/m/it/12 sin$\OT1/txr/m/n/12 y$\OMS/txsy/m/n/12 ^^T$
+ []
 
-? 
-! Extra }, or forgotten $.
-<recently read> }
-                 
-l.81 ...tive integer n, prove that \sqrt{($4n+1)$}
-                                                   < \sqrt{$n$} < \sqrt{$4n+...
 
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.81 ...tive integer n, prove that \sqrt{($4n+1)$}
-                                                   < \sqrt{$n$} < \sqrt{$4n+...
+Underfull \hbox (badness 3547) in paragraph at lines 90--93
+[]\OT1/txr/m/n/12 For ev-ery pos-i-tive in-te-ger n, prove that
+ []
 
-? 
-! Extra }, or forgotten $.
-<recently read> }
-                 
-l.81 ...tive integer n, prove that \sqrt{($4n+1)$}
-                                                   < \sqrt{$n$} < \sqrt{$4n+...
 
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.81 ...tive integer n, prove that \sqrt{($4n+1)$}
-                                                   < \sqrt{$n$} < \sqrt{$4n+...
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-? 
-! Extra }, or forgotten $.
-<recently read> }
-                 
-l.81 ...tive integer n, prove that \sqrt{($4n+1)$}
-                                                   < \sqrt{$n$} < \sqrt{$4n+...
 
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.81 ...tive integer n, prove that \sqrt{($4n+1)$}
-                                                   < \sqrt{$n$} < \sqrt{$4n+...
+Underfull \hbox (badness 1997) in paragraph at lines 93--96
+[]\OT1/txr/m/n/12 Let $\OML/txmi/m/it/12 a; b; c$ \OT1/txr/m/n/12 be pos-i-tive
+ real num-bers such
+ []
 
-? 
-! Extra }, or forgotten $.
-<recently read> }
-                 
-l.81 ...tive integer n, prove that \sqrt{($4n+1)$}
-                                                   < \sqrt{$n$} < \sqrt{$4n+...
 
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.81 ...n, prove that \sqrt{($4n+1)$} < \sqrt{$n$}
-                                                   < \sqrt{$4n+2$}.$ Hence o...
+Overfull \hbox (224.62216pt too wide) in paragraph at lines 93--96
+\OT1/txr/m/n/12 1\OML/txmi/m/it/12 ; \OT1/txr/m/n/12 2\OML/txmi/m/it/12 ; ::: [
+]$
+ []
 
-? 
-! Extra }, or forgotten $.
-<recently read> }
-                 
-l.81 ...n, prove that \sqrt{($4n+1)$} < \sqrt{$n$}
-                                                   < \sqrt{$4n+2$}.$ Hence o...
 
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.81 ...n, prove that \sqrt{($4n+1)$} < \sqrt{$n$}
-                                                   < \sqrt{$4n+2$}.$ Hence o...
+Underfull \hbox (badness 2401) in paragraph at lines 96--99
+[]\OT1/txr/m/n/12 Use math-e-mat-i-cal in-duc-tion to show that
+ []
 
-? 
-! Extra }, or forgotten $.
-<recently read> }
-                 
-l.81 ...n, prove that \sqrt{($4n+1)$} < \sqrt{$n$}
-                                                   < \sqrt{$4n+2$}.$ Hence o...
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.81 ...n, prove that \sqrt{($4n+1)$} < \sqrt{$n$}
-                                                   < \sqrt{$4n+2$}.$ Hence o...
 
-? 
-! Extra }, or forgotten $.
-<recently read> }
-                 
-l.81 ...n, prove that \sqrt{($4n+1)$} < \sqrt{$n$}
-                                                   < \sqrt{$4n+2$}.$ Hence o...
-
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.81 ...n, prove that \sqrt{($4n+1)$} < \sqrt{$n$}
-                                                   < \sqrt{$4n+2$}.$ Hence o...
-
-? 
-! Extra }, or forgotten $.
-<recently read> }
-                 
-l.81 ...n, prove that \sqrt{($4n+1)$} < \sqrt{$n$}
-                                                   < \sqrt{$4n+2$}.$ Hence o...
-
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.81 ...qrt{($4n+1)$} < \sqrt{$n$} < \sqrt{$4n+2$}
-                                                  .$ Hence or otherwise, pro...
-
-? 
-! Extra }, or forgotten $.
-<recently read> }
-                 
-l.81 ...qrt{($4n+1)$} < \sqrt{$n$} < \sqrt{$4n+2$}
-                                                  .$ Hence or otherwise, pro...
-
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.81 ...qrt{($4n+1)$} < \sqrt{$n$} < \sqrt{$4n+2$}
-                                                  .$ Hence or otherwise, pro...
-
-? 
-! Extra }, or forgotten $.
-<recently read> }
-                 
-l.81 ...qrt{($4n+1)$} < \sqrt{$n$} < \sqrt{$4n+2$}
-                                                  .$ Hence or otherwise, pro...
-
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.81 ...qrt{($4n+1)$} < \sqrt{$n$} < \sqrt{$4n+2$}
-                                                  .$ Hence or otherwise, pro...
-
-? 
-! Extra }, or forgotten $.
-<recently read> }
-                 
-l.81 ...qrt{($4n+1)$} < \sqrt{$n$} < \sqrt{$4n+2$}
-                                                  .$ Hence or otherwise, pro...
-
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.81 ...qrt{($4n+1)$} < \sqrt{$n$} < \sqrt{$4n+2$}
-                                                  .$ Hence or otherwise, pro...
-
-? 
-! Extra }, or forgotten $.
-<recently read> }
-                 
-l.81 ...qrt{($4n+1)$} < \sqrt{$n$} < \sqrt{$4n+2$}
-                                                  .$ Hence or otherwise, pro...
-
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.81 ...$ Hence or otherwise, prove that [\sqrt{n}
-                                                   + \sqrt{($n+1$)}]= $[\sqr...
-
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.81 ...ise, prove that [\sqrt{n} + \sqrt{($n+1$)}
-                                                  ]= $[\sqrt{$4n+1$}],$ wher...
-
-? 
-! Extra }, or forgotten $.
-\@x@sqrt ...box \z@ \hbox {$\m@th #1\sqrtsign {#2}
-                                                  $} \mkern 3mu\box \z@ 
-l.81 ...ise, prove that [\sqrt{n} + \sqrt{($n+1$)}
-                                                  ]= $[\sqrt{$4n+1$}],$ wher...
-
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.81 ...ise, prove that [\sqrt{n} + \sqrt{($n+1$)}
-                                                  ]= $[\sqrt{$4n+1$}],$ wher...
-
-? 
-! Extra }, or forgotten $.
-\@x@sqrt ...box \z@ \hbox {$\m@th #1\sqrtsign {#2}
-                                                  $} \mkern 3mu\box \z@ 
-l.81 ...ise, prove that [\sqrt{n} + \sqrt{($n+1$)}
-                                                  ]= $[\sqrt{$4n+1$}],$ wher...
-
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.81 ...ise, prove that [\sqrt{n} + \sqrt{($n+1$)}
-                                                  ]= $[\sqrt{$4n+1$}],$ wher...
-
-? 
-! Extra }, or forgotten $.
-\@x@sqrt ...box \z@ \hbox {$\m@th #1\sqrtsign {#2}
-                                                  $} \mkern 3mu\box \z@ 
-l.81 ...ise, prove that [\sqrt{n} + \sqrt{($n+1$)}
-                                                  ]= $[\sqrt{$4n+1$}],$ wher...
-
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.81 ...ise, prove that [\sqrt{n} + \sqrt{($n+1$)}
-                                                  ]= $[\sqrt{$4n+1$}],$ wher...
-
-? 
-! Extra }, or forgotten $.
-\@x@sqrt ...box \z@ \hbox {$\m@th #1\sqrtsign {#2}
-                                                  $} \mkern 3mu\box \z@ 
-l.81 ...ise, prove that [\sqrt{n} + \sqrt{($n+1$)}
-                                                  ]= $[\sqrt{$4n+1$}],$ wher...
-
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.81 ...sqrt{n} + \sqrt{($n+1$)}]= $[\sqrt{$4n+1$}
-                                                  ],$ where [$x$] denotes th...
-
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.81 ...sqrt{n} + \sqrt{($n+1$)}]= $[\sqrt{$4n+1$}
-                                                  ],$ where [$x$] denotes th...
-
-? 
-! Extra }, or forgotten $.
-<recently read> }
-                 
-l.81 ...sqrt{n} + \sqrt{($n+1$)}]= $[\sqrt{$4n+1$}
-                                                  ],$ where [$x$] denotes th...
-
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.81 ...sqrt{n} + \sqrt{($n+1$)}]= $[\sqrt{$4n+1$}
-                                                  ],$ where [$x$] denotes th...
-
-? 
-! Extra }, or forgotten $.
-<recently read> }
-                 
-l.81 ...sqrt{n} + \sqrt{($n+1$)}]= $[\sqrt{$4n+1$}
-                                                  ],$ where [$x$] denotes th...
-
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.81 ...sqrt{n} + \sqrt{($n+1$)}]= $[\sqrt{$4n+1$}
-                                                  ],$ where [$x$] denotes th...
-
-? 
-! Emergency stop.
-<inserted text> 
-                }
-l.81 ...sqrt{n} + \sqrt{($n+1$)}]= $[\sqrt{$4n+1$}
-                                                  ],$ where [$x$] denotes th...
-End of file on the terminal!
-
- 
+] (./assign1.aux)
+Package rerunfilecheck Info: File `assign1.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+ ) 
 Here is how much of TeX's memory you used:
- 30461 strings out of 476091
- 599880 string characters out of 5794082
- 1857330 words of memory out of 5000000
- 50201 multiletter control sequences out of 15000+600000
- 563288 words of font info for 136 fonts, out of 8000000 for 9000
+ 30469 strings out of 476091
+ 599668 string characters out of 5794082
+ 1891330 words of memory out of 5000000
+ 50176 multiletter control sequences out of 15000+600000
+ 572228 words of font info for 149 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 101i,5n,96p,1175b,451s stack positions out of 10000i,1000n,20000p,200000b,200000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 101i,7n,96p,1175b,436s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txf
+onts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on assign1.pdf (1 page, 54784 bytes).
+PDF statistics:
+ 69 PDF objects out of 1000 (max. 8388607)
+ 51 compressed objects within 1 object stream
+ 16 named destinations out of 1000 (max. 500000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+
