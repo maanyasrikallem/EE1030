@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.8.3)  7 AUG 2024 08:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.8.3)  7 AUG 2024 08:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1151,13 +1151,13 @@ LaTeX Font Info:    Trying to load font information for OT1+txr on input line 4
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
-)
-No file assign1.aux.
+) (./assign1.aux)
 \openout1 = `assign1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 48.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
 48.
+
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
@@ -1269,6 +1269,8 @@ LaTeX Info: Redefining \ohm on input line 48.
 Package gensymb Info: Using \textohm for \ohm on input line 48.
 Package gensymb Info: Using \textmu for \micro on input line 48.
 Package hyperref Info: Link coloring OFF on input line 48.
+
+(./assign1.out) (./assign1.out)
 \@outlinefile=\write5
 \openout5 = `assign1.out'.
 
@@ -1312,6 +1314,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 60--61
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Underfull \hbox (badness 3547) in paragraph at lines 95--96
 []\OT1/txr/m/n/12 For ev-ery pos-i-tive in-te-ger n, prove that
  []
@@ -1325,18 +1330,12 @@ Underfull \hbox (badness 2401) in paragraph at lines 104--105
 
 
 ] (./assign1.aux)
-
-Package rerunfilecheck Warning: File `assign1.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `assign1.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: File `assign1.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 30421 strings out of 476091
- 598566 string characters out of 5794082
+ 30427 strings out of 476091
+ 598638 string characters out of 5794082
  1893330 words of memory out of 5000000
  50140 multiletter control sequences out of 15000+600000
  572228 words of font info for 149 fonts, out of 8000000 for 9000
@@ -1349,7 +1348,7 @@ t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
 onts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on assign1.pdf (1 page, 53636 bytes).
+Output written on assign1.pdf (1 page, 53578 bytes).
 PDF statistics:
  69 PDF objects out of 1000 (max. 8388607)
  51 compressed objects within 1 object stream
