@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.8.3)  15 AUG 2024 16:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.8.3)  15 AUG 2024 16:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1154,14 +1154,18 @@ LaTeX Font Info:    Trying to load font information for OT1+txr on input line 4
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
-) (./assign1.aux)
+)
+
+LaTeX Warning: Unused global option(s):
+    [article].
+
+(./assign1.aux)
 \openout1 = `assign1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 47.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
 47.
-
-(/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 47.
@@ -1320,10 +1324,10 @@ Package rerunfilecheck Info: File `assign1.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 30456 strings out of 476091
- 599088 string characters out of 5794082
+ 30457 strings out of 476091
+ 599098 string characters out of 5794082
  1877330 words of memory out of 5000000
- 50163 multiletter control sequences out of 15000+600000
+ 50164 multiletter control sequences out of 15000+600000
  572228 words of font info for 149 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  101i,10n,96p,1175b,433s stack positions out of 10000i,1000n,20000p,200000b,200000s
