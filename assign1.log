@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.8.3)  9 AUG 2024 08:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.8.3)  15 AUG 2024 16:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -22,6 +22,7 @@ LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 5
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
+** ATTENTION: Single column mode is not typically used with IEEE publications.
 -- Using 8.5in x 11in (letter) paper.
 -- Using PDF output.
 \@IEEEnormalsizeunitybaselineskip=\dimen143
@@ -1062,14 +1063,16 @@ ex
 ) (/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-obj-eu-triangles.tex
 2022/09/23 4.25c tkz-obj-eu-triangles.tex
 )) (./gvv.sty
+\c@MYtempeqncnt=\count334
+
 ! Illegal parameter number in definition of \mean.
 <to be read again> 
                    2
 l.49 ...idecommand{\mean}[1]{E\left[ #1 \right|#2}
                                                   
 ? 
-\c@matchleft=\count334
-\c@matchright=\count335
+\c@matchleft=\count335
+\c@matchright=\count336
 )
 Runaway argument?
 {\setcounter {matchleft}{0}\setcounter {matchright}{0}\tabularx {\textwidth \ET
@@ -1096,23 +1099,23 @@ Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \LTright=\skip68
 \LTpre=\skip69
 \LTpost=\skip70
-\LTchunksize=\count336
+\LTchunksize=\count337
 \LTcapwidth=\dimen326
 \LT@head=\box78
 \LT@firsthead=\box79
 \LT@foot=\box80
 \LT@lastfoot=\box81
 \LT@gbox=\box82
-\LT@cols=\count337
-\LT@rows=\count338
-\c@LT@tables=\count339
-\c@LT@chunks=\count340
+\LT@cols=\count338
+\LT@rows=\count339
+\c@LT@tables=\count340
+\c@LT@chunks=\count341
 \LT@p@ftn=\toks45
 )
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip71
-\multirow@cntb=\count341
+\multirow@cntb=\count342
 \multirow@dima=\skip72
 \bigstrutjot=\dimen327
 )
@@ -1129,23 +1132,23 @@ Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
 \TX@old@col=\dimen330
 \TX@target=\dimen331
 \TX@delta=\dimen332
-\TX@cols=\count342
+\TX@cols=\count343
 \TX@ftn=\toks46
 )
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count343
+\c@float@type=\count344
 \float@exts=\toks47
 \float@box=\box83
 \@float@everytoks=\toks48
 \@floatcapt=\box84
 )
-\c@theorem=\count344
-\c@problem=\count345
-\c@proposition=\count346
-\c@lemma=\count347
-\c@example=\count348
-\c@rem=\count349
+\c@theorem=\count345
+\c@problem=\count346
+\c@proposition=\count347
+\c@lemma=\count348
+\c@example=\count349
+\c@rem=\count350
 LaTeX Font Info:    Trying to load font information for OT1+txr on input line 4
 8.
 
@@ -1236,16 +1239,16 @@ LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <24> not available
 -- Lines per column: 50 (exact).
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count350
+\scratchcounter=\count351
 \scratchdimen=\dimen333
 \scratchbox=\box85
-\nofMPsegments=\count351
-\nofMParguments=\count352
+\nofMPsegments=\count352
+\nofMParguments=\count353
 \everyMPshowfont=\toks49
-\MPscratchCnt=\count353
+\MPscratchCnt=\count354
 \MPscratchDim=\dimen334
-\MPnumerator=\count354
-\makeMPintoPDFobject=\count355
+\MPnumerator=\count355
+\makeMPintoPDFobject=\count356
 \everyMPtoPDFconversion=\toks50
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1256,7 +1259,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count356
+\c@lstlisting=\count357
 \symgns@font=\mathgroup10
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
 (Font)                  TS1/txr/m/n --> TS1/txr/b/n on input line 48.
@@ -1274,10 +1277,10 @@ Package hyperref Info: Link coloring OFF on input line 48.
 \@outlinefile=\write5
 \openout5 = `assign1.out'.
 
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Trying to load font information for U+txsya on input line 6
 0.
-
-(/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsya.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyb on input line 6
@@ -1304,46 +1307,26 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 6
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
-Underfull \hbox (badness 3965) in paragraph at lines 60--61
-[]\OT1/txr/m/n/12 Using math-e-mat-i-cal in-duc-tion, prove that
- []
-
 LaTeX Font Info:    Trying to load font information for OMS+txr on input line 7
-9.
+4.
+
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omstxr.fd
 File: omstxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <12> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 79.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 3547) in paragraph at lines 96--97
-[]\OT1/txr/m/n/12 For ev-ery pos-i-tive in-te-ger $\OML/txmi/m/it/12 n$\OT1/txr
-/m/n/12 , prove that
- []
-
-
-Underfull \hbox (badness 2401) in paragraph at lines 105--106
-[]\OT1/txr/m/n/12 Use math-e-mat-i-cal in-duc-tion to show that
- []
-
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-
-] (./assign1.aux)
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 74.
+ [2] (./assign1.aux)
 Package rerunfilecheck Info: File `assign1.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 30448 strings out of 476091
- 598984 string characters out of 5794082
- 1891330 words of memory out of 5000000
- 50158 multiletter control sequences out of 15000+600000
+ 30456 strings out of 476091
+ 599088 string characters out of 5794082
+ 1877330 words of memory out of 5000000
+ 50163 multiletter control sequences out of 15000+600000
  572228 words of font info for 149 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 101i,7n,96p,1175b,436s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,10n,96p,1175b,433s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
@@ -1351,10 +1334,10 @@ t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
 onts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on assign1.pdf (1 page, 53029 bytes).
+Output written on assign1.pdf (2 pages, 53470 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
- 51 compressed objects within 1 object stream
- 16 named destinations out of 1000 (max. 500000)
+ 76 PDF objects out of 1000 (max. 8388607)
+ 57 compressed objects within 1 object stream
+ 19 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
