@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.8.3)  21 AUG 2024 12:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.8.3)  22 AUG 2024 03:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1906,7 +1906,7 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 6
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
-Underfull \hbox (badness 10000) in paragraph at lines 100--102
+Underfull \hbox (badness 10000) in paragraph at lines 103--105
 
  []
 
@@ -1917,9 +1917,9 @@ Package rerunfilecheck Info: File `assign2.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 52188 strings out of 476091
- 1233367 string characters out of 5794082
- 1865330 words of memory out of 5000000
+ 52189 strings out of 476091
+ 1233379 string characters out of 5794082
+ 1866330 words of memory out of 5000000
  71754 multiletter control sequences out of 15000+600000
  577501 words of font info for 165 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -1930,10 +1930,10 @@ e/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist
 /public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
 tmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on assign2.pdf (1 page, 42445 bytes).
+Output written on assign2.pdf (1 page, 42456 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
- 41 compressed objects within 1 object stream
- 4 named destinations out of 1000 (max. 500000)
+ 74 PDF objects out of 1000 (max. 8388607)
+ 42 compressed objects within 1 object stream
+ 5 named destinations out of 1000 (max. 500000)
  109 words of extra memory for PDF output out of 10000 (max. 10000000)
 
