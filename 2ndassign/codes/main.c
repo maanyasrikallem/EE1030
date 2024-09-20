@@ -1,33 +1,75 @@
 #include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+#include "libs/mathfun.h"
 
-// Function prototype
-void findFourthVertex(double x1, double y1, double x2, double y2, double x3, double y3, double* x4, double* y4);
+// Function prototypes
+double **createMat(int m,int n);
+void freeMat(double **matrix, int m);
+void findFourthVertex(double **A, double **B, double **C, double **D);
+
+// Function to free a matrix of size m x n
+void freeMat(double **matrix, int m) {
+    for (int i = 0; i < m; i++) {
+        free(matrix[i]);
+    }
+    free(matrix);
+}
+
+// Function to find the fourth vertex D of the parallelogram
+void findFourthVertex(double **A, double **B, double **C, double **D) {
+    // Midpoint of diagonal AC
+    double midpoint_AC_x = (A[0][0] + C[0][0]) / 2;
+    double midpoint_AC_y = (A[1][0] + C[1][0]) / 2;
+
+    // Calculate D using the midpoint property
+    D[0][0] = 2 * midpoint_AC_x - B[0][0];
+    D[1][0] = 2 * midpoint_AC_y - B[1][0];
+}
 
 int main() {
-    double x1, y1, x2, y2, x3, y3;
-    double x4, y4;
+    // Coordinates of vertices A, B, and C
+    double a_coords[2] = {1.0, 3.0};
+    double b_coords[2] = {-1.0, 2.0};
+    double c_coords[2] = {2.0, 5.0};
 
-    // Input coordinates of the three vertices
-    printf("Enter the coordinates of the first vertex (x1 y1): ");
-    scanf("%lf %lf", &x1, &y1);
+    // Create matrices for vertices
+    double **A = createMat(2, 1);
+    double **B = createMat(2, 1);
+    double **C = createMat(2, 1);
+    double **D = createMat(2, 1);
 
-    printf("Enter the coordinates of the second vertex (x2 y2): ");
-    scanf("%lf %lf", &x2, &y2);
+    A[0][0] = a_coords[0];
+    A[1][0] = a_coords[1];
 
-    printf("Enter the coordinates of the third vertex (x3 y3): ");
-    scanf("%lf %lf", &x3, &y3);
+    B[0][0] = b_coords[0];
+    B[1][0] = b_coords[1];
 
-    // Calculate the coordinates of the fourth vertex
-    findFourthVertex(x1, y1, x2, y2, x3, y3, &x4, &y4);
+    C[0][0] = c_coords[0];
+    C[1][0] = c_coords[1];
 
-    // Display the result
-    printf("The coordinates of the fourth vertex are (%.2lf, %.2lf)\n", x4, y4);
+    // Find the fourth vertex D
+    findFourthVertex(A, B, C, D);
+
+    // Open a file to write the output
+    FILE *file = fopen("output.dat", "w");
+    if (file == NULL) {
+        fprintf(stderr, "Error opening file for writing.\n");
+        return 1;
+    }
+
+    // Write the coordinates of the fourth vertex D to the file
+    fprintf(file, "The coordinates of the fourth vertex D are: (%.2f, %.2f)\n", D[0][0], D[1][0]);
+
+    // Close the file
+    fclose(file);
+
+    // Free allocated memory
+    freeMat(A, 2);
+    freeMat(B, 2);
+    freeMat(C, 2);
+    freeMat(D, 2);
 
     return 0;
 }
 
-// Function definition
-void findFourthVertex(double x1, double y1, double x2, double y2, double x3, double y3, double* x4, double* y4) {
-    *x4 = x1 - x2 + x3;
-    *y4 = y1 - y2 + y3;
-}
