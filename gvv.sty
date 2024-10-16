@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 \newcounter{MYtempeqncnt}
 \DeclareMathOperator*{\Res}{Res}
 %\renewcommand{\baselinestretch}{2}
@@ -12,6 +13,10 @@
 \fi
 
 % correct bad hyphenation here
+=======
+% correct bad hyphenation here
+\usepackage{xparse}
+>>>>>>> effa3cf (ai24btech11017)
 \hyphenation{op-tical net-works semi-conduc-tor}
 \def\inputGnumericTable{}                                 %%
 
@@ -28,8 +33,13 @@ columns=fullflexible
 %}
 
 
+<<<<<<< HEAD
 \providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
 \providecommand{\prt}[2]{\ensuremath{p_{#1}^{\left(#2\right)} }}        % own macro for this question
+=======
+
+\providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
+>>>>>>> effa3cf (ai24btech11017)
 \providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
 \providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
 \providecommand{\lsbrak}[1]{\ensuremath{{}\left[#1\right.}}
@@ -40,6 +50,7 @@ columns=fullflexible
 \providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
 \providecommand{\lcbrak}[1]{\ensuremath{\left\{#1\right.}}
 \providecommand{\rcbrak}[1]{\ensuremath{\left.#1\right\}}}
+<<<<<<< HEAD
 \newcommand{\sgn}{\mathop{\mathrm{sgn}}}
 \providecommand{\abs}[1]{\left\vert#1\right\vert}
 \providecommand{\res}[1]{\Res\displaylimits_{#1}} 
@@ -63,6 +74,44 @@ columns=fullflexible
 \newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
 \newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
 \newcommand{\myaugvec}[2]{\ensuremath{\begin{amatrix}{#1}#2\end{amatrix}}}
+=======
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\providecommand{\res}[1]{\Res\displaylimits_{#1}} 
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\mtx}[1]{\mathbf{#1}}
+\providecommand{\mean}[1]{E\left[ #1 \right]}
+\providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
+%\numberwithin{equation}{subsection}
+\providecommand{\prt}[2]{\ensuremath{p_{#1}^{\left(#2\right)} }}        % own macro for this question
+\newcommand{\sgn}{\mathop{\mathrm{sgn}}}
+\providecommand{\cond}[2]{#1\middle|#2}
+
+\let\vec\mathbf
+%\newcounter{MYtempeqncnt}
+\DeclareMathOperator*{\Res}{Res}
+%\renewcommand{\baselinestretch}{2}
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+\def\inputGnumericTable{}                                 %%
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\cosec}{\,\text{cosec}\,}
+\providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
+\newcommand{\myvecf}[2][0pt]{%
+    \ensuremath{%
+        \begin{pmatrix}%
+            \renewcommand{\arraystretch}{1.5}% Adjust default row spacing
+            \def\myvec@rowspacing{#1}% Set row spacing
+            #2%
+        \end{pmatrix}%
+    }%
+}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+	\newcommand{\augvec}[3]{\ensuremath{\begin{amatrix}{#1|#2}#3\end{amatrix}}}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+>>>>>>> effa3cf (ai24btech11017)
 \providecommand{\rank}{\text{rank}}
 \providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
 \providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
@@ -74,10 +123,16 @@ columns=fullflexible
 \providecommand{\diff}[2]{\ensuremath{\frac{d{#1}}{d{#2}}}}
 \providecommand{\myceil}[1]{\left \lceil #1 \right \rceil }
 \newcommand\figref{Fig.~\ref}
+<<<<<<< HEAD
+=======
+\newcommand\appref{Appendix~\ref}
+\newcommand\probref{Problem~\ref}
+>>>>>>> effa3cf (ai24btech11017)
 \newcommand\tabref{Table~\ref}
 \newcommand{\sinc}{\,\text{sinc}\,}
 \newcommand{\rect}{\,\text{rect}\,}
 %%
+<<<<<<< HEAD
 %	%\newcommand{\solution}[2]{\textbf{Solution:}{#1}}
 %\newcommand{\solution}{\noindent \textbf{Solution: }}
 %\newcommand{\cosec}{\,\text{cosec}\,}
@@ -92,6 +147,30 @@ columns=fullflexible
 %\let\StandardTheFigure\thefigure
 \let\vec\mathbf
 
+=======
+
+%\let\StandardTheFigure\thefigure
+\let\vec\mathbf
+\let\define\triangleq
+
+
+\lstset{
+%language=C,
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+
+
+\NewDocumentEnvironment{amatrix}{>{\SplitArgument{1}{|}}m}
+ {\left(\makeamatrix#1}
+ {\end{array}\right)}
+\NewDocumentCommand{\makeamatrix}{mm}{%
+  \IfNoValueTF{#2}
+    {\begin{array}{@{}*{#1}{c}@{}}}
+    {\begin{array}{@{}*{#1}{c}|*{#2}{c}@{}}}%
+}
+>>>>>>> effa3cf (ai24btech11017)
 \NewDocumentCommand{\system}{gg}{%
   \IfNoValueTF{#1}
     {%
@@ -107,6 +186,7 @@ columns=fullflexible
       }
     }%
 }
+<<<<<<< HEAD
 %\numberwithin{equation}{section}
 %\numberwithin{equation}{subsection}
 %\numberwithin{problem}{section}
@@ -130,6 +210,13 @@ columns=fullflexible
 %     \def\centbox#1{\makebox[0in]{#1}}
 %     \def\topbox#1{\raisebox{-\baselineskip}[0in][0in]{#1}}
 %     \def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
+=======
+
+%\let\StandardTheFigure\thefigure
+\let\vec\mathbf
+
+
+>>>>>>> effa3cf (ai24btech11017)
 \newcounter{matchleft}\newcounter{matchright}
 
 \newenvironment{matchtabular}{%
@@ -137,8 +224,20 @@ columns=fullflexible
   \setcounter{matchright}{0}%
   \tabularx{\textwidth}{%
     >{\leavevmode\hbox to 1.5em{\stepcounter{matchleft}\arabic{matchleft}.}}X%
+<<<<<<< HEAD
     \tabularx{\textwidth}{%
     >{\leavevmode\hbox to 1.5em{\stepcounter{matchleft}\arabic{matchleft}.}}X%
     >{\leavevmode\hbox to 1.5em{\stepcounter{matchleft}\alph{matchright})}}X%
     }%
     }{\endtabularx
+=======
+    >{\leavevmode\hbox to 1.5em{\stepcounter{matchright}\alph{matchright})}}X%
+    }%
+}{\endtabularx}
+%\makeatletter
+%\renewcommand{\subsection}{\@startsection{subsection}{2}{0pt}%
+%  {-2\parskip}%
+%  {0.1\baselineskip}%
+%  {\normalfont\large\bfseries}}
+%\makeatother
+>>>>>>> effa3cf (ai24btech11017)
