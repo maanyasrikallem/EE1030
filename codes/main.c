@@ -1,14 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include"func.c"
-
-void freeMat(double **mat, int m) {
-    for (int i = 0; i < m; i++) {
-        free(mat[i]);
-    }
-    free(mat);
-}
+#include"libs/mathfun.h"
+#include"libs/geofun.h"
 
 int main() {
     // Define a 2x2 matrix

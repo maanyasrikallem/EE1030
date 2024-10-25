@@ -57,8 +57,12 @@ plt.plot(x_circle, y_circle, label='Circle', color='blue')
 plt.scatter(*point, color='red', label='Point (1, 2)')
 
 # Marking the point's status
-status = "Inside" if is_inside else "Outside"
+status = "Inside" if is_inside else "P"
 plt.text(point[0], point[1], f" {status}", fontsize=12, verticalalignment='bottom')
+
+#Marking centre 
+plt.scatter(h, k, color='green', label='Centre (C)')
+plt.text(h, k, ' C', fontsize=12, verticalalignment='bottom', horizontalalignment='right', color='green') 
 
 # Setting limits and labels
 plt.xlim(-5, 5)
