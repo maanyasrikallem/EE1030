@@ -1,0 +1,164 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{ST-$2021$-$14$ to $26$}
+\author{AI24BTECH11017 - MAANYA SRI
+}
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+
+\begin{enumerate} 
+\item Let $A$ and $B$ be two events such that $P\brak{B} = \frac{3}{4}$ and $P\brak{A \cup B^c} = \frac{1}{2}$. If $A$ and $B$ are independent, then $P\brak{A}$ equals \underline{\hspace{1cm}} (round off to 2 decimal places).
+
+\item A fair die is rolled twice independently. Let $X$ and $Y$ denote the outcomes of the first and second roll, respectively. Then $E\brak{X+Y \mid \brak{X - Y}^2 = 1}$ equals \underline{\hspace{1cm}}.
+
+\item Let $X$ be a random variable having distribution function
+\begin{align*}
+F\brak{x} = 
+\begin{cases}
+0, & x < 1, \\
+\frac{a}{2}, & 1 \leq x < 2, \\
+\frac{c}{6}, & 2 \leq x < 3, \\
+1, & x \geq 3,
+\end{cases}
+\end{align*}
+where $a$ and $c$ are appropriate constants. Let $A_n = \sbrak{ 1 + \frac{1}{n}, 3 - \frac{1}{n} }, n \geq 1$, and $A = \bigcup_{i=1}^{\infty} A_i$.
+If $P\brak{X \leq 1} = \frac{1}{2}$ and $E\brak{X} = \frac{5}{3}$, then $P\brak{X \in A}$ equals \underline{\hspace{1cm}} (round off to 2 decimal places).
+
+\item If the marginal probability density function of the $k^{th}$ order statistic of a random sample of size 8 from a uniform distribution on $\sbrak{0,2}$ is
+\begin{align*}
+f\brak{x} = 
+\begin{cases}
+\frac{7}{32} x^6 \brak{2 - x}, & 0 < x < 2, \\
+0, & \text{otherwise},
+\end{cases}
+\end{align*}
+then $k$ equals \underline{\hspace{1cm}}.
+
+\item For $\alpha > 0$, let $\cbrak{ X_n^{\brak{\alpha}} }_{n\geq1}$ be a sequence of independent random variables such that
+\begin{align*}
+P\brak{X_n^{\brak{\alpha}} = 1} = \frac{1}{n^{2\alpha}} = \quad 1 - P\brak{X_n^{\brak{\alpha}} = 0}.
+\end{align*}
+Let $S = \cbrak{ \alpha > 0 : X_n^{\brak{\alpha}} \text{ converges to 0 almost surely as } n \to \infty }$.
+Then the infimum of $S$ equals \underline{\hspace{1cm}} (round off to 2 decimal places).
+
+\item Let $\cbrak{X_n}_{n\geq1}$ be a sequence of independent and identically distributed random variables each having uniform distribution on $\sbrak{0,2}$. For $n \geq 1$, let
+\begin{align*}
+Z_n = - \log_e \brak{ \prod_{i=1}^{n} \brak{2 - X_i} }^{\frac{1}{n}}.
+\end{align*}
+Then, as $n \to \infty$, the sequence $\cbrak{Z_n}_{n\geq1}$ converges almost surely to \underline{\hspace{1cm}} (round off to 2 decimal places).
+
+\item Let $\cbrak{X_n}_{n \geq 0}$ be a time-homogeneous discrete time Markov chain with state space $\cbrak{0,1}$ and transition probability matrix
+\begin{align*}
+\begin{bmatrix}
+0.25 & 0.75 \\
+0.75 & 0.25 
+\end{bmatrix}.
+\end{align*}
+If $P\brak{X_0 = 0} = P\brak{X_0 = 1} = 0.5$, then
+\begin{align*}
+\sum_{k=1}^{100} E \sbrak{\brak{X_{2k}}^{2k}}
+\end{align*}
+equals \underline{\hspace{1cm}}
+
+\item Let $\cbrak{0,2}$ be a realization of a random sample of size 2 from a binomial distribution with parameters 2 and $p$, where $p \in \brak{0,1}$. To test $H_0: p = \frac{1}{2}$ against $H_1: p \neq \frac{1}{2}$, the observed value of the likelihood ratio test statistic equals \underline{\hspace{1cm}} (round off to 2 decimal places).
+
+\item Let $X$ be a random variable having the probability density function
+\begin{align*}
+f\brak{x} = 
+\begin{cases}
+\frac{3}{13} \brak{1 - x} \brak{9 - x}, & 0 < x < 1, \\
+0, & \text{otherwise}.
+\end{cases}
+\end{align*}
+Then $\frac{4}{3} E \sbrak{X \brak{X^2 - 15X + 27}}$ equals \underline{\hspace{1cm}} (round off to 2 decimal places).
+
+\item Let $\brak{Y, X_1, X_2}$ be a random vector with mean vector $\begin{pmatrix} 5 \\ 2 \\ 0 \end{pmatrix}$ and variance-covariance matrix
+\begin{align*}
+\begin{bmatrix}
+10 & 0.5 & -0.5 \\
+0.5 & 7 & 1.5 \\
+-0.5 & 1.5 & 2
+\end{bmatrix}.
+\end{align*}
+Then the value of the multiple correlation coefficient between $Y$ and its best linear predictor on $X_1$ and $X_2$ equals \underline{\hspace{1cm}} (round off to 2 decimal places).
+
+\item Let $X_1, X_2$ and $X_3$ be a random sample from a bivariate normal distribution with unknown mean vector $\mu$ and unknown variance-covariance matrix $\Sigma$, which is a positive definite matrix. The $p$-value corresponding to the likelihood ratio test for testing $H_0: \mu = 0$ against $H_1: \mu \neq 0$ based on the realization $\cbrak{ \begin{pmatrix} 1 \\ 2 \end{pmatrix}, \begin{pmatrix} -4 \\ -2 \end{pmatrix}, \begin{pmatrix} -5 \\ 0 \end{pmatrix}}$  of the random sample equals \underline{\hspace{1cm}} (round off to 2 decimal places).
+
+\item Let $Y_i = \alpha + \beta x_i + \epsilon_i$, $i = 1, 2, 3$, where $x_i$'s are fixed covariates, $\alpha$ and $\beta$ are unknown parameters and $\epsilon_i$'s are independent and identically distributed random variables with mean zero and finite variance. Let $\hat{\alpha}$ and $\hat{\beta}$ be the ordinary least squares estimators of $\alpha$ and $\beta$, respectively. Given the following observations
+ \begin{table}[h!]
+     \centering
+     \input{tables/table.tex}
+ \end{table}
+the value of $\hat{\alpha} + \hat{\beta}$ equals \underline{\hspace{1cm}} (round off to 2 decimal places).
+\\ \textbf{ Q. \ref{q26}- Q. 43 Multiple Choice Question (MCQ), carry TWO mark each(for each wrong answer : -2/3).}
+\item \label{q26} Let $f: \mathbb{R} \rightarrow \mathbb{R}$ be defined by
+\begin{align*}
+f\brak{x} =
+\begin{cases}
+x^3 \sin x, & x = 0 \text{ or } x \text{ is irrational}, \\
+\frac{1}{q^3}, & x = \frac{p}{q}, p \in \mathbb{Z} \setminus \cbrak{0}, q \in \mathbb{N} \text{ and } \text{gcd}(p,q) = 1,
+\end{cases}
+\end{align*}
+where $\mathbb{R}$ denotes the set of all real numbers, $\mathbb{Z}$ denotes the set of all integers, $\mathbb{N}$ denotes the set of all positive integers and $\text{gcd}\brak{p, q}$ denotes the greatest common divisor of $p$ and $q$. Then which one of the following statements is true?
+
+\begin{enumerate}
+\item $f$ is not continuous at 0
+\item $f$ is not differentiable at 0
+\item $f$ is differentiable at 0 and the derivative of $f$ at 0 equals 0
+\item $f$ is differentiable at 0 and the derivative of $f$ at zero equals 1
+\end{enumerate}
+
+ \end{enumerate}
+ \end{document}
