@@ -61,7 +61,7 @@
 \begin{enumerate} 
 \item Let $A$ and $B$ be two events such that $P\brak{B} = \frac{3}{4}$ and $P\brak{A \cup B^c} = \frac{1}{2}$. If $A$ and $B$ are independent, then $P\brak{A}$ equals \underline{\hspace{1cm}} (round off to 2 decimal places).
 
-\item A fair die is rolled twice independently. Let $X$ and $Y$ denote the outcomes of the first and second roll, respectively. Then $E\brak{X+Y \mid \brak{X - Y}^2 = 1}$ equals \underline{\hspace{1cm}}.
+\item A fair die is rolled twice independently. Let $X$ and $Y$ denote the outcomes of the first and second roll, respectively. Then $E \brak{\cond {X + Y} {\brak{X - Y}^2 = 1}}$ equals \underline{\hspace{1cm}}.
 
 \item Let $X$ be a random variable having distribution function
 \begin{align*}
@@ -101,10 +101,8 @@ Then, as $n \to \infty$, the sequence $\cbrak{Z_n}_{n\geq1}$ converges almost su
 
 \item Let $\cbrak{X_n}_{n \geq 0}$ be a time-homogeneous discrete time Markov chain with state space $\cbrak{0,1}$ and transition probability matrix
 \begin{align*}
-\begin{bmatrix}
-0.25 & 0.75 \\
-0.75 & 0.25 
-\end{bmatrix}.
+\myvec{ 0.25 & 0.75 \\ \\
+	0.75 & 0.25}
 \end{align*}
 If $P\brak{X_0 = 0} = P\brak{X_0 = 1} = 0.5$, then
 \begin{align*}
@@ -124,13 +122,13 @@ f\brak{x} =
 \end{align*}
 Then $\frac{4}{3} E \sbrak{X \brak{X^2 - 15X + 27}}$ equals \underline{\hspace{1cm}} (round off to 2 decimal places).
 
-\item Let $\brak{Y, X_1, X_2}$ be a random vector with mean vector $\begin{pmatrix} 5 \\ 2 \\ 0 \end{pmatrix}$ and variance-covariance matrix
+\item Let $\brak{Y, X_1, X_2}$ be a random vector with mean vector 
+	$\myvec{ 5 \\ 2 \\ 0 }$
+	 and variance-covariance matrix
 \begin{align*}
-\begin{bmatrix}
-10 & 0.5 & -0.5 \\
-0.5 & 7 & 1.5 \\
--0.5 & 1.5 & 2
-\end{bmatrix}.
+	\myvec{ 10 & 0.5 & -0.5 \\ \\ 
+	0.5 & 7 & 1.5 \\ \\ 
+	-0.5 & 1.5 & 2}.
 \end{align*}
 Then the value of the multiple correlation coefficient between $Y$ and its best linear predictor on $X_1$ and $X_2$ equals \underline{\hspace{1cm}} (round off to 2 decimal places).
 
