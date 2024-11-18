@@ -1,0 +1,351 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{Software Assignment}
+\author{AI24BTECH11017 - MAANYA SRI REDDY
+}
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+\section{Various Algorithms To Compute Eigen Values}
+\begin{enumerate}
+    \item \textbf{Power Iteration:} \\
+    The Power Iteration method is a simple and efficient algorithm used to compute the largest eigenvalue and its corresponding eigenvector of a matrix. \\
+    METHOD: \\
+    Let $A$ be an $n \times n$ matrix with eigenvalues $\lambda_1, \lambda_2, \dots, \lambda_n$, sorted so that 
+\begin{align}
+|\lambda_1| > |\lambda_2| \geq \dots \geq |\lambda_n|,
+\end{align}
+and corresponding eigenvectors $v_1, v_2, \dots, v_n$.
+
+Given any initial vector $b_0$ (not orthogonal to $v_1$), the matrix $A$ applied iteratively to $b_0$ amplifies the contribution of the eigenvector corresponding to $\lambda_1$ due to its dominance in magnitude:
+\begin{align}
+b_k = A^k b_0 \approx \lambda_1^k v_1.
+\end{align}
+
+After normalization, $b_k$ converges to the eigenvector $v_1$, and the corresponding eigenvalue can be estimated as:
+\begin{align}
+\lambda_1 = \frac{b_k^\top A b_k}{b_k^\top b_k}.
+\end{align}
+
+Using the power iteration method:
+\begin{align}
+b_1 & = A b_0, \\
+b_2 & = A b_1, \\
+b_3 & = A b_2, 
+\end{align}
+and so on .
+At each step, the Rayleigh quotient provides an approximation of the dominant eigenvalue:
+\begin{align}
+\lambda_1 \approx \frac{b_k^\top A b_k}{b_k^\top b_k}.
+\end{align}
+
+\textbf{Time Complexity} \\
+Each iteration involves a matrix-vector multiplication, which has a complexity of $O(n^2)$ for a dense $n \times n$ matrix.  
+For $m$ iterations, the total complexity is:
+\[
+O(mn^2).
+\]
+Sparse matrices significantly reduce this cost, as only the non-zero elements are involved in computation.
+
+\textbf{Advantages}
+\begin{itemize}
+    \item \textbf{Simplicity}: Easy to implement with minimal computational overhead.
+    \item \textbf{Efficiency}: Works well for sparse matrices or when only the largest eigenvalue is required.
+    \item \textbf{Memory Efficiency}: Requires storing only the matrix $A$ and the vector $b_k$, making it suitable for large matrices.
+\end{itemize}
+
+\textbf{Limitations}
+\begin{itemize}
+    \item \textbf{Single Eigenvalue}: Finds only the dominant eigenvalue; other methods are required to find the rest.
+    \item \textbf{Slow Convergence}: Convergence rate depends on the ratio $\left| \frac{\lambda_2}{\lambda_1} \right|$. If these values are close, the method converges slowly.
+    \item \textbf{Not Suitable for Complex Eigenvalues}: Works best with real and dominant eigenvalues.
+\end{itemize}
+
+ \item \textbf{QR Algorithm:} \\
+ The algorithm works by iteratively factorizing a matrix into its QR decomposition (a product of an orthogonal matrix Q and an upper triangular matrix R), and then updating the matrix through these factorizations. The primary purpose of the QR algorithm is to find the eigenvalues of a matrix by transforming it into a simpler form.\\
+ METHOD: \\
+ \textbf{QR Decomposition}
+
+The QR decomposition is a factorization of a matrix $A$ into a product of an orthogonal matrix $Q$ and an upper triangular matrix $R$, i.e.
+\begin{align}
+A &= QR, 
+\end{align}
+
+\textbf{Iteration Process}
+
+After computing the QR decomposition of the matrix $A$, we update the matrix by performing:
+\begin{align}
+A_{k+1} &= R_k Q_k,
+\end{align}
+where $A_k$ is the matrix at the $k$-th iteration, and $Q_k$ and $R_k$ are the orthogonal and upper triangular matrices from the QR decomposition of $A_k$, respectively.
+
+The idea is that as the iterations progress, the matrix $A_k$ converges to a form where the diagonal elements are the eigenvalues of the original matrix $A$.
+
+\textbf{Convergence}
+
+After several iterations, the matrix $A_k$ becomes close to an upper triangular matrix, and the eigenvalues of $A$ can be read from its diagonal entries. If $A$ is a real, symmetric matrix, the QR algorithm converges more quickly, and the diagonal elements of $A_k$ converge to the eigenvalues of $A$.
+\textbf{Computational Complexity}
+
+Each QR decomposition requires $O(n^3)$ operations, where $n$ is the size of the matrix. If $m$ iterations are needed for convergence, the total computational cost of the algorithm is:
+\begin{align}
+O(mn^3).
+\end{align}
+
+\textbf{Advantages}
+
+\begin{itemize}
+    \item \textbf{General Applicability}: The QR algorithm can be applied to any square matrix, whether symmetric or non-symmetric.
+    \item \textbf{Accuracy}: The algorithm can provide accurate results, particularly for symmetric matrices.
+    \item \textbf{Diagonalization}: It can not only compute eigenvalues but also provides the basis for computing eigenvectors.
+\end{itemize}
+
+\textbf{Limitations}
+
+\begin{itemize}
+    \item \textbf{Slow Convergence for Non-Symmetric Matrices}: The convergence can be slow, especially when the matrix is non-symmetric or has eigenvalues that are close in magnitude.
+    \item \textbf{Computationally Intensive}: The method can be computationally expensive, especially for large matrices, as the QR decomposition has a cubic time complexity.
+\end{itemize}
+\item \textbf{Lanczos Method:} \\
+The Lanczos method is an iterative algorithm used to compute eigenvalues and eigenvectors of large symmetric matrices.The Lanczos method is based on the idea of orthogonalizing a sequence of vectors (starting from a random initial vector) that spans a subspace of the matrix. These vectors are used to build a tridiagonal matrix whose eigenvalues approximate the eigenvalues of the original matrix.\\
+METHOD: \\
+\textbf{Lanczos Method:}
+
+The Lanczos method is an iterative algorithm used to compute eigenvalues and eigenvectors of large symmetric matrices. It is particularly efficient for sparse symmetric matrices.
+
+\textbf{Initialization:} Start with a symmetric matrix $A$ and an initial vector $b_0$, which should not be orthogonal to the eigenvector corresponding to the largest eigenvalue. Normalize $b_0$ to obtain the first vector $v_1$:
+\[
+\|b_0\| = 1 \quad \text{and} \quad v_1 = b_0
+\]
+
+\textbf{Iterative Process:} For each iteration $k$, the Lanczos method builds an orthogonal basis for the Krylov subspace spanned by the vectors $A v_1, A v_2, \dots, A v_k$. The key steps of the iteration are:
+\begin{align*}
+\text{1. Apply the matrix $A$ to the vector $v_k$:} \quad & w_k = A v_k \\
+\text{2. Compute the coefficients $\alpha_k$ and $\beta_{k-1}$:} \quad & \alpha_k = v_k^\top A v_k \\
+\text{3. Orthogonalize $w_k$:} \quad & w_k = w_k - \alpha_k v_k - \beta_{k-1} v_{k-1} \\
+\text{4. Normalize $w_k$ to form the next vector:} \quad & \beta_k = \|w_k\|, \quad v_{k+1} = \frac{w_k}{\beta_k}
+\end{align*}
+
+The vector $v_{k+1}$ is added to the orthogonal set, and the process repeats for $k = 1, 2, 3, \dots$.
+
+\textbf{Tridiagonal Matrix:} After $k$ iterations, the Lanczos method produces a tridiagonal matrix $T_k$ formed by the coefficients $\alpha_k$ on the diagonal and $\beta_k$ on the subdiagonal and superdiagonal:
+\begin{align}
+T_k = 
+\begin{pmatrix}
+\alpha_1 & \beta_1 & 0 & \cdots & 0 \\
+\beta_1 & \alpha_2 & \beta_2 & \cdots & 0 \\
+0 & \beta_2 & \alpha_3 & \cdots & 0 \\
+\vdots & \vdots & \vdots & \ddots & \vdots \\
+0 & 0 & 0 & \cdots & \alpha_k
+\end{pmatrix}
+\end{align}
+
+\textbf{Convergence:} After several iterations, the algorithm provides increasingly better approximations of the eigenvalues of $A$. The Lanczos method is often used in conjunction with other techniques (e.g., the Arnoldi method) to refine the solution or to compute more eigenvalues.
+
+\textbf{Advantages}
+\begin{itemize}
+    \item \textbf{Efficiency for Sparse Matrices:} Requires only matrix-vector multiplications, making it computationally efficient for large sparse matrices.
+    \item \textbf{Memory Efficiency:} Only a few vectors need to be stored, making it suitable for very large matrices.
+    \item \textbf{Quick Convergence for Symmetric Matrices:} Converges quickly to the largest or smallest eigenvalues of symmetric matrices.
+\end{itemize}
+
+\textbf{Limitations}
+\begin{itemize}
+    \item \textbf{Symmetry Requirement:} The Lanczos method works only for symmetric matrices, not for general (non-symmetric) matrices.
+    \item \textbf{Loss of Orthogonality:} Over multiple iterations, the vectors $v_k$ can lose orthogonality, causing numerical instability (known as Lanczos breakdown). Reorthogonalization can mitigate this issue but increases computational cost.
+    \item \textbf{Limited to Few Eigenvalues:} Typically used to compute only the largest or smallest eigenvalues. For all eigenvalues, other methods might be more efficient.
+\end{itemize}
+
+\item \textbf{Characteristic Polynomial Method :} \\
+It is the most simplest way of finding eigen values of a simple matrix.\\
+METHOD: \\
+\textbf{Construct the Matrix $(A - \lambda I)$:}
+
+Subtract $\lambda I$, which is a diagonal matrix with $\lambda$ along the diagonal, from the matrix $A$:
+\begin{align}
+A - \lambda I = 
+\begin{bmatrix}
+a_{11} - \lambda & a_{12} & \cdots & a_{1n} \\
+a_{21} & a_{22} - \lambda & \cdots & a_{2n} \\
+\vdots & \vdots & \ddots & \vdots \\
+a_{n1} & a_{n2} & \cdots & a_{nn} - \lambda
+\end{bmatrix}.
+\end{align}
+The resulting matrix depends on the variable $\lambda$.
+
+\textbf{Formulate the Determinant:}
+
+Compute the determinant of $(A - \lambda I)$. This will result in a polynomial in $\lambda$ of degree $n$, called the characteristic polynomial
+\begin{align}
+p(\lambda) = \det(A - \lambda I).
+\end{align}
+
+\textbf{Solve the Characteristic Equation:}
+
+Solve the characteristic equation:
+\begin{align}
+p(\lambda) = 0,
+\end{align}
+to find the roots $\lambda$. These roots are the eigenvalues of the matrix $A$.
+
+\textbf{Advantages}
+
+\textbf{Conceptual Simplicity:}
+\begin{itemize}
+    \item The method is straightforward and directly based on the definition of eigenvalues as roots of the characteristic polynomial:
+    \begin{align}
+    \det(A - \lambda I) = 0.
+    \end{align}
+    \item Easy to understand and implement for small matrices.
+\end{itemize}
+
+\textbf{General Applicability:}
+\begin{itemize}
+    \item Can be applied to any square matrix (symmetric or non-symmetric).
+    \item Does not require the matrix to have specific properties like sparsity or symmetry.
+\end{itemize}
+
+\textbf{No Need for Preconditioning:}
+\begin{itemize}
+    \item Unlike iterative methods such as Power Iteration or Lanczos, this approach does not require selecting an initial vector or constructing subspaces.
+\end{itemize}
+
+\textbf{Disadvantages}
+
+\textbf{Computational Complexity:}
+\begin{itemize}
+    \item Computing the determinant recursively for $(A - \lambda I)$ is computationally expensive. For an $n \times n$ matrix, this has a time complexity of $\mathcal{O}(n!)$ for exact calculations, making it impractical for large matrices.
+    \item Even with numerical approximations, evaluating determinants repeatedly for different $\lambda$ values can be slow.
+\end{itemize}
+
+\textbf{Numerical Instability:}
+\begin{itemize}
+    \item Determinants can be sensitive to small changes in $\lambda$, leading to inaccuracies in finding roots.
+    \item Small perturbations in the matrix elements can significantly affect the computed eigenvalues.
+\end{itemize}
+
+\textbf{Approximation Issues:}
+\begin{itemize}
+    \item The method relies on numerical root-finding, which might miss closely spaced eigenvalues if the step size for $\lambda$ is too large.
+    \item Requires fine-tuning of the step size and range of $\lambda$, which can be time-consuming.
+\end{itemize}
+
+\section{Algorithm I Chose: QR Algorithm}
+The method I chose is the QR Algorithm because the remaining won't work for all the matrices. For example, with Power iteration method we can only find the maximum eigen value and should use another methods for finding remaining values. Jacobi Method and Divide-and-Conquer Algorithm works only for symmetric matrices. Characteristic Polynomial Method works efficiently only for small matrices upto n=2 or 3 . QR Algorithm is the only works for both symmetric and non-symmetric matrices and also for large size matrices. 
+
+    \section*{QR Algorithm Example}
+
+We aim to find the eigenvalues of the matrix $A$ using the QR algorithm.
+
+\begin{align}
+    A = \begin{bmatrix} 2 & 1 \\ 1 & 2 \end{bmatrix}
+\end{align}
+
+
+
+\textbf{Step 1: Compute the QR Decomposition of $A$}
+
+The QR decomposition expresses $A$ as $A = QR$, where:
+\begin{itemize}
+    \item $Q$ is an orthogonal matrix ($Q^T Q = I$).
+    \item $R$ is an upper triangular matrix.
+\end{itemize}
+
+For $A = \begin{bmatrix} 2 & 1 \\ 1 & 2 \end{bmatrix}$:
+\begin{align}
+    q_1 &= \frac{\begin{bmatrix} 2 \\ 1 \end{bmatrix}}{\|\begin{bmatrix} 2 \\ 1 \end{bmatrix}\|} 
+    = \frac{\begin{bmatrix} 2 \\ 1 \end{bmatrix}}{\sqrt{2^2 + 1^2}} 
+    = \begin{bmatrix} \frac{2}{\sqrt{5}} \\ \frac{1}{\sqrt{5}} \end{bmatrix}, \\
+    q_2 &= \frac{\text{column 2 of } A - (\text{projection onto } q_1)}{\| \cdots \|} \\
+    &= \begin{bmatrix} -\frac{1}{\sqrt{5}} \\ \frac{2}{\sqrt{5}} \end{bmatrix}.
+\end{align}
+
+Thus:
+\begin{align}
+    Q &= \begin{bmatrix} \frac{2}{\sqrt{5}} & -\frac{1}{\sqrt{5}} \\ \frac{1}{\sqrt{5}} & \frac{2}{\sqrt{5}} \end{bmatrix}, \\
+    R &= Q^T A = \begin{bmatrix} \sqrt{5} & \frac{4}{\sqrt{5}} \\ 0 & \sqrt{5} \end{bmatrix}.
+\end{align}
+
+Therefore:
+\begin{align}
+    A = Q R.
+\end{align}
+
+\textbf{Step 2: Update $A$}
+
+Compute:
+\begin{align}
+    A_1 = R Q,
+\end{align}
+which gives:
+\begin{align}
+    A_1 = \begin{bmatrix} 3 & 0 \\ 0 & 1 \end{bmatrix}.
+\end{align}
+
+\textbf{Step 3: Extract Eigenvalues}
+
+When $A_1$ converges to an upper triangular matrix, the diagonal elements are the eigenvalues. In this case:
+\begin{align}
+    \text{Eigenvalues: } 3 \text{ and } 1.
+\end{align}
+
+\textbf{Summary}
+
+Using the QR algorithm:
+\begin{align}
+    \text{Eigenvalues of } A = \begin{bmatrix} 2 & 1 \\ 1 & 2 \end{bmatrix} \text{ are } 3 \text{ and } 1.
+\end{align}
+\end{enumerate}
+
+\end{document}
+
